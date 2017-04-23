@@ -14,6 +14,3 @@ Code für einen 1-tägigen React-Redux-Kurs.
 ## JS-Bundle bauen
 * `npm run build`
 * `build/index.html` im Browser öffnen
-
-## Alternativen für das Setup
-* https://github.com/facebookincubator/create-react-app
