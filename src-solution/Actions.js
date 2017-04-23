@@ -45,11 +45,11 @@ export function addUser(user) {
 export function submitUser(user) {
   return (dispatch) => {
 
-    backend.postUser(user, returnCode => {
-      if(returnCode === 200) {
+    //backend.postUser(user, returnCode => {
+      //if(returnCode === 200) {
         dispatch(addUser(user));
-      }
-    });
+      //}
+    //});
   };
 }
 
@@ -62,9 +62,10 @@ export function setUsers(users) {
 
 export function loadUsers() {
   return (dispatch) => {
-
+    /*
     backend.fetchUsers(users => {
         dispatch(setUsers(users));
     });
+    */
   };
 }
