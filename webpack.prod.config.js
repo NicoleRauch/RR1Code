@@ -3,11 +3,11 @@ var webpack = require("webpack");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: {
-        app: "./src/index"
-    },
+    entry: [
+        "./src/index"
+    ],
     output: {
-        path: path.join(__dirname, "public"),
+        path: path.join(__dirname, "build"),
         filename: "[hash].bundle.js"
     },
     plugins: [
@@ -21,10 +21,9 @@ module.exports = {
             }
         })
     ],
-    devtool: "source-map",
     module: {
-        loaders: [
-            { test: /\.js$/, loaders: ["react-hot", "babel"], include: path.join(__dirname, "src") }
+        rules: [
+            { test: /\.js$/, use: [{loader: "babel-loader"}], include: path.resolve(__dirname, "src") }
         ]
     }
 };

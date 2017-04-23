@@ -2,14 +2,22 @@ var path = require("path");
 var webpack = require("webpack");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
+var localPort = "3000";
+var proxiedServer = "http://localhost:8080";
+
 module.exports = {
     entry: [
-        "webpack-dev-server/client?http://localhost:3000",
-        "webpack/hot/only-dev-server",
         "./src/index"
     ],
     devServer: {
-        contentBase: "./build"
+        contentBase: "./build",
+        lazy: false,     // always compile immediately to save time
+        compress: false, // do not spend time on this
+        host: "0.0.0.0", // server is also available externally
+        port: localPort,
+        hot: true,       // hot module replacement
+        historyApiFallback: true,
+        proxy: { "/": proxiedServer }
     },
     devtool: "source-map",
     output: {
@@ -29,8 +37,8 @@ module.exports = {
         })
     ],
     module: {
-        loaders: [
-            { test: /\.js$/, loaders: ["react-hot", "babel"], include: path.join(__dirname, "src") }
+        rules: [
+            { test: /\.js$/, use: [{loader: "babel-loader"}], include: path.resolve(__dirname, "src") }
         ]
     }
 };
