@@ -17,7 +17,7 @@ export default class extends Component {
     const mailAddress = this.state.showMail ? <span style={{color: "#999999"}}> ({this.props.user.eMail})</span> : null;
 
     return <li>
-      <span onClick={this._handleToggleClick}>({this.state.showMail ? "-" : "+"}) </span>
+      <span onClick={this._handleToggleClick} style={{cursor: "pointer"}}>({this.state.showMail ? "-" : "+"}) </span>
       <span onClick={this.props.onNameClick} style={{backgroundColor: highlightColor}}>{this.props.user.firstName} {this.props.user.lastName}</span>{mailAddress}
     </li>;
   }
