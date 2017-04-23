@@ -1,15 +1,19 @@
 # RR1Code
 Code für einen 1-tägigen React-Redux-Kurs.
 
-## Voraussetzungen:
+## Voraussetzungen
 * Node.js Version 6.x oder höher
-* npm install -g create-react-app
+* Einen geeigneten Editor oder eine IDE
+   * Z. B. Webstorm -- es gibt eine 30-Tage-Testversion: https://www.jetbrains.com/webstorm/download/
 
-## Erste Schritte:
-* create-react-app my-app
-* cd my-app
-* npm start
-* http://localhost:3000
+## Erste Schritte
+* `npm install`
+* `npm start`
+* http://localhost:3000 im Browser öffnen
 
-## Weitere Informationen
+## JS-Bundle bauen
+* `npm run build`
+* `build/index.html` im Browser öffnen
+
+## Alternativen für das Setup
 * https://github.com/facebookincubator/create-react-app
