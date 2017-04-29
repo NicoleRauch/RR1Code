@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 
+import HelloWorld from "./HelloWorldFunctionalComponent";
 import User from "./User";
 import UserList from "./UserList";
 
@@ -15,6 +16,7 @@ export default class extends Component {
 
     return (
       <div>
+        <HelloWorld />
         <User {...users[0]} />
         <UserList users={users} />
       </div>
