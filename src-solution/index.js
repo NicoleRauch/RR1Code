@@ -8,10 +8,10 @@ import logger from "redux-logger";
 import App from "./App";
 import reducers from './reducers';
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const enhancedCompose = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(reducers,
-    composeEnhancers(
+    enhancedCompose(
         applyMiddleware(
             thunkMiddleware,
             logger
