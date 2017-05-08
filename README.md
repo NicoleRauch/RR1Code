@@ -5,12 +5,13 @@ Code für einen 1-tägigen React-Redux-Kurs.
 * Node.js Version 6.x oder höher
 * Einen geeigneten Editor oder eine IDE
    * Z. B. Webstorm -- es gibt eine 30-Tage-Testversion: https://www.jetbrains.com/webstorm/download/
-* Idealerweise Chrome (Firefox ist auch möglich)   
+* Idealerweise Chrome (Firefox ist auch möglich)
 
 ## Erste Schritte
 In dem ausgecheckten Verzeichnis folgendes durchführen:
 * `npm install`
 * `npm start`
+
 Hinweis für Windows-Nutzer: Hierfür muss Visual Studio C++ installiert sein.
 
 Anschließend:
