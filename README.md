@@ -8,10 +8,15 @@ Code für einen 1-tägigen React-Redux-Kurs.
 * Idealerweise Chrome (Firefox ist auch möglich)   
 
 ## Erste Schritte
+In dem ausgecheckten Verzeichnis folgendes durchführen:
 * `npm install`
 * `npm start`
+Hinweis für Windows-Nutzer: Hierfür muss Visual Studio C++ installiert sein.
+
+Anschließend:
 * http://localhost:3000 im Browser öffnen
 
 ## JS-Bundle bauen
-* `npm run build`
+* Mac/Linux-Nutzer: `npm run build`
+* Windows-Nutzer: `npm run build-win`
 * `build/index.html` im Browser öffnen
