@@ -18,7 +18,6 @@ export function addUser(user) {
   }
 }
 
-
 export default function (state = INITIAL_STATE, action = {}) {
   return {
     users: users(state.users, action)
