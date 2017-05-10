@@ -1,8 +1,9 @@
 import React, {Component} from "react";
 
 import HelloWorld from "./HelloWorldFunctionalComponent";
-import User from "./User";
-import UserList from "./UserList";
+import User from "./UserWithHighlight";
+import UserList from "./UserListWithHighlight";
+import UserCreationViaInternalState from "./UserCreationViaInternalState";
 
 const users = [
     {firstName: "Nicole", lastName: "Rauch"},
@@ -19,6 +20,7 @@ export default class extends Component {
         <HelloWorld />
         <User {...users[0]} />
         <UserList users={users} />
+        <UserCreationViaInternalState submitUser={ () => {} } />
       </div>
     );
   }
