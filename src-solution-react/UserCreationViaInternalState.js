@@ -20,7 +20,7 @@ export default class extends Component {
           <input type="text" onBlur={e => this.setState({lastName: e.target.value})} />
         </div>
         <div>
-          <button onClick={e => { this.props.submitUser(this.state); }}>Submit</button>
+          <button onClick={() => { this.props.submitUser(this.state); }}>Submit</button>
         </div>
       </div>
     );
