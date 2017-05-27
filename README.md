@@ -22,3 +22,17 @@ Anschließend:
 * Mac/Linux-Benutzer: `npm run build`
 * Windows-Benutzer: `npm run build-win`
 * `build/index.html` im Browser öffnen
+
+## Lösungen ausprobieren
+
+Die Webpack-Konfiguration ist so eingestellt, dass automatisch auf die Dateien im Verzeichnis `src` zugegriffen wird. Somit kann man im Verlauf des Kurses schrittweise eine eigene Lösung implementieren und ausprobieren. 
+
+Zum Verwenden der mitgelieferten Beispiele kann man in der Datei `webpack.config.js` den Pfad innerhalb des Blocks `entry` so verändern, dass er auf eine der anderen `index.js` Dateien zeigt, z. B. so:
+
+```
+    entry: [
+        "./src-solution-redux-3/index"
+    ],
+```
+
+Die Beispiele sind alle funktionsfähig und bauen aufeinander auf (in alphabetischer Reihenfolge). Allerdings benötigt das letzte Beispiel einen Server, um die gesendeten AJAX-Requests entgegenzunehmen. Dieser ist nicht im Lieferumfang enthalten ;-) 
