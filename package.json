@@ -5,6 +5,7 @@
     "build": "npm install && NODE_ENV=production webpack -p --config webpack.prod.config.js",
     "build-win": "webpack -p --config webpack.prod.config.js",
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start-win": "node .\\node_modules\\webpack-dev-server\\bin\\webpack-dev-server.js",
     "lint": "eslint src",
 
     "webpack": "NODE_ENV=production webpack -p --config webpack.prod.config.js",
