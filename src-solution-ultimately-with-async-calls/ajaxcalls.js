@@ -4,7 +4,7 @@ export function postUser(user, callback) {
   ajax.ajax({
       url: "/api/user",
       method: "POST",
-      body: "firstName=" + user.firstName + "&lastName=" + user.lastName + "&eMail=" + user.eMail
+      body: "firstName=" + user.firstName + "&lastName=" + user.lastName
     },
     (code) => {
       callback(code);

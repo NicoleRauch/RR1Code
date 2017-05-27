@@ -1,8 +1,7 @@
-import * as backend from "./backend";
+import * as backend from "./ajaxcalls";
 
 export const USER_ADDED = "USER_ADDED";
 export const USERS_SET = "USERS_SET";
-
 
 export function addUser(user) {
   return {
